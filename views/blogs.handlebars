@@ -1,0 +1,21 @@
+<div class="secondary-bg content-section">
+   {{#each blogs}}
+   
+  <div class="box" style="margin-top: 20px;">
+    <a class="nav-link" href="/blog/detail/{{id}}">
+      <div class="title-section-blog">
+        <p class="blog-title">
+         {{title}}
+        </p>
+        <p class="blog-author">
+          {{user.name}} {{createdAt}}
+        </p>
+      </div>
+    </a>
+
+    <div class="content-section-blog">
+     {{content}}
+    </div>
+  </div>
+   {{/each}}
+</div>

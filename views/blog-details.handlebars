@@ -1,0 +1,38 @@
+    <div  class="secondary-bg content-section">
+        <div class="box">
+            <div class="title-section-blog">
+              <p class="blog-title">
+               {{blog.title}}
+              </p> 
+              <p class="blog-author">
+                {{blog.user.name}} {{blog.createdAt}}
+              </p>
+            </div>
+           <div class="content-section-blog">
+            {{blog.content}}
+           </div>
+        </div>
+        <form method="post" style="margin-top: 30px;" class="box">
+            <div class="title-section-blog">
+            </div>
+            <div class="input-section">
+                <label>Write your comment</label>
+                <textarea name="content"></textarea>
+
+            </div>
+           <button type="submit" class="grey-btn">Comment</button>
+        </form>
+        <h1 style="text-align: center;margin-top:50px">Comments </h1>
+           {{#each comments}}
+         <div style="margin-top:30px" class="box">
+            <div class="title-section-blog">
+            </div>
+           <div class="content-section-blog">
+            {{content}}
+            <br/>
+            <br/>
+            - {{user.name}} {{createdAt}}
+           </div>
+        </div>
+           {{/each}}
+    </div>

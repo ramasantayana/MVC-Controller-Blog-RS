@@ -1,0 +1,24 @@
+<div class="secondary-bg content-section">
+    <form method="post" class="box">
+        <div class="title-section">Login</div>
+        {{#if err}}
+        <p class="error-text">{{err}}</p>
+        {{/if}}
+
+        {{#if msg}}
+        <p class="info-text">
+            {{msg}}
+        </p>
+        {{/if}}
+        <div class="input-section">
+            <label>Username</label>
+            <input name="email">
+        </div>
+        <div class="input-section">
+            <label>Password</label>
+            <input type="password" name="password">
+        </div>
+        <button class="grey-btn">Login</button>
+        <a class="black-link" href="register">Sign up insted</a>
+    </div>
+</div>

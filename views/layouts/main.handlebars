@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   <nav class="primary-bg">
+        <ul class="nav-menu-section">
+            <li  class="nav-menu">
+               <a href="/blog" class="nav-link">Home</a> 
+            </li>
+            <li  class="nav-menu">
+              <a href="/dashboard" class="nav-link"> Dashboard</a>  
+            </li>
+            {{#if req.session.user}}
+            <li  class="nav-menu">
+                 <a href="/logout" class="nav-link"> 
+                Logout
+                </a>
+            </li>
+          {{else}}
+    
+             <li  class="nav-menu">
+                 <a href="/login" class="nav-link"> 
+                Login
+                </a>
+                </li>
+            {{/if}}
+        </ul>
+        <div class="logo-section secondary-bg">
+            The Tech Blog
+        </div>
+    </nav>
+
+    {{{body}}}
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+ <form method="post" class="secondary-bg content-section">
+        <div class="box">
+            <div class="title-section-blog">
+              <p class="blog-title">
+               {{title}} Blog
+              </p> 
+            </div>
+            <div class="input-section">
+                <label>Title</label>
+                <input value="{{blog.title}}" name="title">
+            </div>
+            <div class="input-section">
+                <label>Content</label>
+                <textarea name="content">
+                  {{blog.content}}
+                </textarea>
+            </div>
+            <button type="submit" class="grey-btn">Save</button>
+        </div>
+    </form>

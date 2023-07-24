@@ -1,0 +1,16 @@
+<div class="secondary-bg content-section">
+    {{#each blogs}}
+    {{#dataValues}}
+    <a class="nav-link" href="/blog/edit/{{id}}">
+    <button style="margin: 20px auto;text-align: left;padding: 20px ;height: max-content;border-radius: 10px;"
+        class="grey-btn">{{title}}
+    </button>
+    </a>
+    {{/dataValues}}
+    {{/each}}
+    <div>
+        <a href="/blog/create" class="nav-link">
+            <button class="primary-bg new-post-btn">+ New Post</button>
+    </div>
+    </a>
+</div>
